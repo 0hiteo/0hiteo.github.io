@@ -20,7 +20,21 @@
         <div class="marg"></div>
         
         <div id="footer">
-            <div> Designed by ESN Milano Statale, v 1.1.0 </div>
+            <div> Designed by ESN Milano Statale, v 1.2.0 </div>
+            <button id="btn" onclick="uploadPage()">Crea nuova carta</button>
+        </div>
+    </div>
+
+    <div id="newCard">
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            Seleziona l'immagine della carta:
+            <br>
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <br><br>
+            <input type="submit" value="Crea carta" name="submit">
+        </form>
+        <div id="footer">
+            <button id="btn" onclick="gamePage()">Annulla</button>
         </div>
     </div>
 </body>
