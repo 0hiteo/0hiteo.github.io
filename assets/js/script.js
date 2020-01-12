@@ -61,3 +61,21 @@ function gamePage() {
 	document.getElementById("main").style.display = "block";
 	document.getElementById("newCard").style.display = "none";
 }
+
+function createNewCard() {
+	var newCard = new Card(
+		document.getElementById("titleForm").value,
+		document.getElementById("descriptionForm").value,
+		document.getElementById("quoteForm").value,
+		"default", 	//document.getElementById("fileToUpload").value,
+		document.getElementById("noteForm").value)
+	cards.push(newCard)
+	document.getElementById("titleForm").value = ""
+	document.getElementById("descriptionForm").value = ""
+	document.getElementById("quoteForm").value = ""
+	//document.getElementById("fileToUpload").value = ""
+	document.getElementById("noteForm").value = ""
+	window.open('mailto:luca.arrotta@gmail.com');
+	gamePage()
+	return false
+}

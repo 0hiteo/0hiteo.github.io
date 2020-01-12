@@ -26,16 +26,35 @@
     </div>
 
     <div id="newCard">
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            Seleziona l'immagine della carta:
+        <form onsubmit="return createNewCard()" method="post">
+            <!--Immagine della carta*:
             <br>
-            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="file" id="fileToUpload" accept="image/*" required>
+            <br><br>-->
+            Titolo*:
+            <br>
+            <input type="text" required class="textInput" id="titleForm">
             <br><br>
-            <input type="submit" value="Crea carta" name="submit">
+            Desrizione*:
+            <br>
+            <input type="text" required class="textInput" id="descriptionForm">
+            <br><br>
+            Citazione:
+            <br>
+            <input type="text" class="textInput" id="quoteForm">
+            <br><br>
+            Autore:
+            <br>
+            <input type="text" class="textInput" id="authorForm">
+            <br><br>
+            Note:
+            <br>
+            <input type="text" class="textInput" id="noteForm">
+            <br><br>
+            <input type="submit" value="Crea carta" name="submit" id="btn">
         </form>
-        <div id="footer">
-            <button id="btn" onclick="gamePage()">Annulla</button>
-        </div>
+        <br><br><br>
+        <button id="btn" onclick="gamePage()">Annulla</button>
     </div>
 </body>
 </html>
