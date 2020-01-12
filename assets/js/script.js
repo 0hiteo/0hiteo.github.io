@@ -53,8 +53,8 @@ function draw() {
 
 
 function uploadPage() {
-	document.getElementById("main").style.display = "none";
-	document.getElementById("newCard").style.display = "block";
+	//document.getElementById("main").style.display = "none";
+	//document.getElementById("newCard").style.display = "block";
 }
 
 function gamePage() {
@@ -75,7 +75,7 @@ function createNewCard() {
 	document.getElementById("quoteForm").value = ""
 	//document.getElementById("fileToUpload").value = ""
 	document.getElementById("noteForm").value = ""
-	window.open('mailto:luca.arrotta@gmail.com');
+	//window.open('mailto:luca.arrotta@gmail.com');
 	gamePage()
 	return false
 }
