@@ -38,7 +38,7 @@ function draw() {
 		document.getElementById("card_img").src="assets/img/"+card.img+".jpg";
 	}
 
-	document.getElementById("card_img").style.height = '60%';
+	//document.getElementById("card_img").style.height = '60%';
 	document.getElementById("name").innerHTML = card.title;
 
 	if(card.quote != '""') {
