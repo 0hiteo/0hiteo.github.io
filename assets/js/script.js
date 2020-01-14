@@ -77,5 +77,5 @@ function createNewCard() {
 	document.getElementById("noteForm").value = ""
 	//window.open('mailto:luca.arrotta@gmail.com');
 	gamePage()
-	return false
+	return true
 }
