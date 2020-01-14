@@ -20,17 +20,28 @@
         <div class="marg"></div>
         
         <div id="footer">
-            <div> Designed by ESN Milano Statale, v 1.2.0 </div>
+            <div> Designed and developed by ESN Milano Statale, v 1.2.0 </div>
             <button id="btn" onclick="uploadPage()">Crea nuova carta</button>
         </div>
     </div>
 
     <div id="newCard">
+        <form name="form" method="POST" data-netlify="true">
+            <br><br><label>Titolo*:<br><input required type="text" name="name" class="textInput"/></label>   
+            <br><br><label>Descrizione*:<br><textarea required type="text" name="name" class="textInput" rows="6"></textarea></label> 
+            <br><br><label>Citazione:<br><textarea type="text" name="name" class="textInput" rows="3"></textarea></label> 
+            <br><br><label>Autore:<br><input type="text" name="name" class="textInput"/></label>   
+            <br><br><label>Note:<br><input type="text" name="name" class="textInput"/></label>
+            <br><br><input type="submit" value="Crea carta" name="submit" id="btn">   
+        </form>
+
+
+        <!--
         <form name="form" method="POST" onsubmit="return createNewCard()" method="post" netlify>
-            <!--Immagine della carta*:
+            Immagine della carta*:
             <br>
             <input type="file" id="fileToUpload" accept="image/*" required>
-            <br><br>-->
+            <br><br>
             Titolo*:
             <br>
             <input type="text" required class="textInput" id="titleForm">
@@ -52,7 +63,7 @@
             <input type="text" class="textInput" id="noteForm">
             <br><br>
             <input type="submit" value="Crea carta" name="submit" id="btn">
-        </form>
+        </form>-->
         <br><br><br>
         <button id="btn" onclick="gamePage()">Annulla</button>
     </div>
