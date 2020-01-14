@@ -53,8 +53,8 @@ function draw() {
 
 
 function uploadPage() {
-	//document.getElementById("main").style.display = "none";
-	//document.getElementById("newCard").style.display = "block";
+	document.getElementById("main").style.display = "none";
+	document.getElementById("newCard").style.display = "block";
 }
 
 function gamePage() {
