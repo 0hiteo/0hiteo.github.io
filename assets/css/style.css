@@ -66,8 +66,9 @@ body{
 }
 
 #quote{
-    font-size: medium; 
+    font-size: large; 
     font-style: italic;
+    margin-top: 10px;
 }
 
 #footer{

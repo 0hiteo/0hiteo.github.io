@@ -26,7 +26,12 @@ function draw() {
 	}
 	
 	$("#name").html(card.Titolo)
-
+	if(card.Citazione != "") {
+		$("#quote").html('"' + card.Citazione + '"')
+	} else {
+		$("#quote").html("")
+	}
+	
 	localJson.splice(r, 1)	
 	console.log(card.Titolo, localJson.length)
 }
