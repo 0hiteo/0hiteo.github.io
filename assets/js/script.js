@@ -1,81 +1,90 @@
-class Card {
-  constructor(title, description, quote, img, typ) {
-    this.title = title
-    this.description = description
-    this.quote = quote
-    this.img = img
-    this.typ = typ
-  }
-}
-
-
-var cards = []
-
-
-for (var i=0;i<json.length;i++) {
-    //console.log("aaa");
-	var obj = json[i]
-    cards.push(new Card(obj.Titolo, obj.Descrizione, obj.Citazione, obj.img, obj.Note))
-}
-
+var localJson = null
+$(document).ready(function(){
+	localStorage.setItem("json", JSON.stringify(json));		// store
+	localJson = JSON.parse(localStorage.getItem("json"))	// retrieve
+});
 
 
 function draw() {
-	var r = Math.floor(Math.random() * cards.length);
-	var card = cards[r]
-	if(card.description.split(":").length == 2) {
-		var splittedDescr = card.description.split(":")
-		document.getElementById("power").innerHTML = splittedDescr[0];
-		document.getElementById("description").innerHTML = splittedDescr[1];
+	var r = Math.floor(Math.random() * localJson.length);
+	var card = localJson[r]
+
+	if(card.Descrizione.split(":").length == 2) {
+		var splittedDescr = card.Descrizione.split(":")
+		$("#power").html(splittedDescr[0])
+		$("#description").html(splittedDescr[1])
 	} else {
-		document.getElementById("power").innerHTML = "";
-		document.getElementById("description").innerHTML = card.description;
-	}
-    //console.log("BBB");
-	if(card.typ == "gif") {
-		document.getElementById("card_img").src="assets/img/"+card.img+".gif";
-	} else {
-		document.getElementById("card_img").src="assets/img/"+card.img+".jpg";
+		$("#power").html("")
+		$("#description").html(card.Descrizione)
 	}
 
-	//document.getElementById("card_img").style.height = '60%';
-	document.getElementById("name").innerHTML = card.title;
-
-	if(card.quote != '""') {
-		document.getElementById("quote").innerHTML = card.quote;
-	} else {
-		document.getElementById("quote").innerHTML = "";
+	try {
+	  document.getElementById("card_img").src="assets/img/"+card.img
 	}
+	catch(err) {
+	  document.getElementById("card_img").src="assets/img/default.jpg"
+	}
+	
+	$("#name").html(card.Titolo)
 
-	cards.splice(r, 1)
-	console.log(cards.length, card.title)
+	localJson.splice(r, 1)	
+	console.log(card.Titolo, localJson.length)
 }
 
 
 function uploadPage() {
-	document.getElementById("main").style.display = "none";
-	document.getElementById("newCard").style.display = "block";
+	$("#main").hide()
+	$("#newCard").show()
+	//document.getElementById("main").style.display = "none";
+	//document.getElementById("newCard").style.display = "block";
 }
 
 function gamePage() {
-	document.getElementById("main").style.display = "block";
-	document.getElementById("newCard").style.display = "none";
+	$("#main").show()
+	$("#newCard").hide()
+	//document.getElementById("main").style.display = "block";
+	//document.getElementById("newCard").style.display = "none";
 }
 
-function createNewCard() {
-	var newCard = new Card(
-		document.getElementById("titleForm").value,
-		document.getElementById("descriptionForm").value,
-		document.getElementById("quoteForm").value,
-		"default", 	//document.getElementById("fileToUpload").value,
-		document.getElementById("noteForm").value)
-	cards.push(newCard)
-	document.getElementById("titleForm").value = ""
-	document.getElementById("descriptionForm").value = ""
-	document.getElementById("quoteForm").value = ""
-	//document.getElementById("fileToUpload").value = ""
-	document.getElementById("noteForm").value = ""
-	//window.open('mailto:luca.arrotta@gmail.com');
-	gamePage()
+function createNewCard(event) {
+	//event.preventDefault()
+	var title = $("#titleForm").val()
+	var description = $("#descriptionForm").val()
+	var quote = $("#quoteForm").val()
+	var img = $("#imgForm").val()
+	img = img.split("\\")
+	img = img[img.length-1]
+	//img = img.split(".")
+	//img.pop()		// elimina l'estensione
+	//img = img.join("");
+	var author = $("#authorForm").val()
+	var note = $("#noteForm").val()
+	var jsonToUpload = "{'Titolo': '" + title + "', 'Descrizione': '" + description + "', 'Citazione': '" + quote + "', 'img': '" + img + "', 'Autore': '" + author + "', 'Note': '" + note + "'}"
+	$("#jsonForm").val(jsonToUpload)	// così viene uploadato su Netlify
 	return true
 }
+
+
+
+
+
+/*
+class Card {
+  constructor(title, description, quote, img, auth, typ) {
+    this.title = title
+    this.description = description
+    this.quote = quote
+    this.img = img
+    this.auth = auth
+    this.typ = typ
+  }
+}
+
+var cards = []
+for (var i=0;i<json.length;i++) {
+    //console.log("aaa");
+	var obj = json[i]
+    cards.push(new Card(obj.Titolo, obj.Descrizione, obj.Citazione, obj.img, obj.Autore, obj.Note))
+}
+*/
+
