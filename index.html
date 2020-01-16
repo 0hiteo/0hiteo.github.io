@@ -9,10 +9,12 @@
     </head>
     <body>
     <div id="main">
-        <button class="btn" onclick="draw()">Pesca una Carta</button>
+        <!--<button class="btn" onclick="draw()">Pesca una Carta</button>-->
+        <button type="button" class="btn" onclick="draw()">Pesca una Carta</button>
         <div class="marg"></div>
         <div id="card_div">
             <div id="name"></div>
+            <div id="spinner"></div>
             <img src="assets/img/card_back.png" id="card_img" onerror="this.onerror=null; this.src='assets/img/default.jpg'">
             <div id="power"> </div>
             <div id="description"> </div>

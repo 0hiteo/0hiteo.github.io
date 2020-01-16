@@ -5,7 +5,8 @@
 }
 
 body{
-    background: #3d7185;
+    /*background: rgba(0, 174, 239, 0.5);*/
+    background: #00aeef;        /* #3d7185 */
     color: white;
 }
 
@@ -20,22 +21,28 @@ body{
 }
 
 .btn {
-    background-color: #d58a00;      /* #00AEEF */
+    background-color: #f47b20;      /* #d58a00 */
     border-radius: 10px;
     border: 0;
     margin-top: 10px;
+    padding: 10px;
+    color: white;
     width: 85%; 
     font-size: xx-large;
 }
 
+
 .btn-footer {
-    background-color: #d58a00;      /* #00AEEF */
+    background-color: #7ac143;      /* #00AEEF */
     border-radius: 10px;
     border: 0;
     margin-top: 10px;
+    padding: 10px;
+    color: white;
     width: 85%; 
     font-size: large;
 }
+
 
 #card_div{
     width: 98%;
@@ -54,6 +61,7 @@ body{
     width: inherit;
     margin-top:10px;
     margin-bottom:10px;
+    border-radius: 15px;
 }
 
 #power{
@@ -74,7 +82,8 @@ body{
 #footer{
     /*position: absolute;*/
     /*bottom:0;*/
-    font-size: medium;
+    color: #2e3192;
+    font-size: large;
     width: 100%;
     padding-bottom: 5px;
     margin-top: 5px;
@@ -86,4 +95,24 @@ body{
 
 #jsonForm {
     display: none;
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#spinner {
+  display: none;
+  color: #ec008c;    /* #7ac143 */
+  margin: 10px;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: text-bottom;
+  border: 0.2em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border .75s linear infinite;
+  animation: spinner-border .75s linear infinite;
 }

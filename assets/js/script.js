@@ -2,12 +2,30 @@ var localJson = null
 $(document).ready(function(){
 	localStorage.setItem("json", JSON.stringify(json));		// store
 	localJson = JSON.parse(localStorage.getItem("json"))	// retrieve
+
+	$('#card_img').on('load', function () {
+		$("#spinner").hide()
+		$('#card_img').css('opacity', '1');
+	});
 });
 
 
+
+
 function draw() {
+	$("#spinner").css("display", "inline-block")
+	$('#card_img').css('opacity', '0.5');
 	var r = Math.floor(Math.random() * localJson.length);
 	var card = localJson[r]
+
+	try {
+	  document.getElementById("card_img").src="assets/img/"+card.img
+	}
+	catch(err) {
+	  document.getElementById("card_img").src="assets/img/default.jpg"
+	}
+
+	
 
 	if(card.Descrizione.split(":").length == 2) {
 		var splittedDescr = card.Descrizione.split(":")
@@ -18,12 +36,6 @@ function draw() {
 		$("#description").html(card.Descrizione)
 	}
 
-	try {
-	  document.getElementById("card_img").src="assets/img/"+card.img
-	}
-	catch(err) {
-	  document.getElementById("card_img").src="assets/img/default.jpg"
-	}
 	
 	$("#name").html(card.Titolo)
 	if(card.Citazione != "") {
