@@ -2,75 +2,83 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">    <!-- Latest compiled and minified CSS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    <!-- jQuery library -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>     <!-- Latest compiled JavaScript -->
         <script src="assets/js/data.js"></script>
         <script src="assets/js/script.js"></script>
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
-    <body>
+    <body class="lightBlue">
     <div id="main">
-        <!--<button class="btn" onclick="draw()">Pesca una Carta</button>-->
-        <button type="button" class="btn" onclick="draw()">Pesca una Carta</button>
-        <div class="marg"></div>
+        <button type="button" class="myBtn blue" onclick="draw()">Pesca una Carta</button>
         <div id="card_div">
             <div id="name"></div>
-            <div id="spinner"></div>
+            <div id="spinner" class="spinner"></div>
             <img src="assets/img/card_back.png" id="card_img" onerror="this.onerror=null; this.src='assets/img/default.jpg'">
             <div id="power"> </div>
             <div id="description"> </div>
             <div id="quote"></div>
         </div>
-        <div class="marg"></div>
+        <hr>
         
+
+
+        <!-- Button to Open the Modal -->
+        <button type="button" class="myBtn green" data-toggle="modal" data-target="#myModal" id="eventoBtn">
+          Nessun evento in corso...
+        </button>
+
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="modalName">Alcatraz</h4>
+                <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+              </div>
+              <div class="modal-body">
+                <img src="assets/img/alcatraz.jpg" id="modalCardImg" onerror="this.onerror=null; this.src='assets/img/default.jpg'">
+                <div id="modalPower"></div>
+                <div id="modalDescription"> Raddoppia il numero di tutte le bevute </div>
+                <div id="modalQuote"> "Il venerdì è solo Alcatraz" </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="myBtn closeBtn pink" data-dismiss="modal">Chiudi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
         <div id="footer">
-            <div> Designed and developed by ESN Milano Statale, v 1.2.0 </div>
-            <button class="btn-footer" onclick="uploadPage()">Crea nuova carta</button>
+            <button class="myBtn-footer orange" onclick="uploadPage()">Crea nuova carta</button>
+            <div> Designed and developed by ESN Milano Statale, v 2.0.0 </div>
         </div>
     </div>
 
+
+
+
+
+
     <div id="newCard">
         <form name="form" id="form" method="POST" onsubmit="return createNewCard()" data-netlify="true">
-            <br><label>Titolo*:<br><input required type="text" id="titleForm" class="textInput"/></label>   
-            <br><br><label>Descrizione*:<br><textarea required type="text" id="descriptionForm" class="textInput" rows="6"></textarea></label> 
-            <br><br><label>Immagine*:<br><input type="file" name="Immagine" id="imgForm" accept="image/*" required></textarea></label> 
-            <br><br><label>Citazione:<br><textarea type="text" id="quoteForm" class="textInput" rows="3"></textarea></label> 
-            <br><br><label>Autore:<br><input type="text" id="authorForm" class="textInput"/></label>   
-            <br><br><label>Note:<br><input type="text" id="noteForm" class="textInput"/></label>
-            <label><input type="text" name="json" id="jsonForm"/></label>
-            <br><br><input type="submit" value="Crea carta" name="submit" class="btn">   
+            <br><label class="myLabel">Titolo*:<br><input required type="text" id="titleForm" class="textInput"/></label>   
+            <br><label class="myLabel">Descrizione*:<br><textarea required type="text" id="descriptionForm" class="textInput" rows="6"></textarea></label> 
+            <br><label class="myLabel">Immagine*:<br><input type="file" name="Immagine" id="imgForm" accept="image/*" required></textarea></label> 
+            <br><label class="myLabel">Citazione:<br><textarea type="text" id="quoteForm" class="textInput" rows="3"></textarea></label> 
+            <br><label class="myLabel">Autore:<br><input type="text" id="authorForm" class="textInput"/></label>   
+            <br><label class="myLabel">Note:<br><input type="text" id="noteForm" class="textInput"/></label>
+            <label class="myLabel"><input class="myInput" type="text" name="json" id="jsonForm"/></label>
+            <br><input type="submit" value="Crea carta" name="submit" class="myBtn green" id="createButton">   
         </form>
-
-
-        <!--    
-        <form onsubmit="return createNewCard()" method="post" netlify>
-            Immagine della carta*:
-            <br>
-            <input type="file" id="fileToUpload" accept="image/*" required>
-            <br><br>
-            Titolo*:
-            <br>
-            <input type="text" required class="textInput" id="titleForm">
-            <br><br>
-            Desrizione*:
-            <br>
-            <input type="text" required class="textInput" id="descriptionForm">
-            <br><br>
-            Citazione:
-            <br>
-            <input type="text" class="textInput" id="quoteForm">
-            <br><br>
-            Autore:
-            <br>
-            <input type="text" class="textInput" id="authorForm">
-            <br><br>
-            Note:
-            <br>
-            <input type="text" class="textInput" id="noteForm">
-            <br><br>
-            <input type="submit" value="Crea carta" name="submit" id="btn">
-        </form>-->
         <div id="footer">
-            <button class="btn-footer" onclick="gamePage()">Annulla</button>
+            <button class="myBtn-footer orange" onclick="gamePage()" id="backButton">Annulla</button>
+            <div id="spinnerCreateCard" class="spinner"></div>
+        </div>
+        <div class="alert blue" id="alert">
+          <strong>Aspetta!</strong> Non uscire da questa pagina, stiamo creando la tua carta!
         </div>
     </div>
 </body>

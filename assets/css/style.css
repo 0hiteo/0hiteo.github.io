@@ -5,10 +5,15 @@
 }
 
 body{
-    /*background: rgba(0, 174, 239, 0.5);*/
-    background: #00aeef;        /* #3d7185 */
     color: white;
+    font-size: large;
 }
+
+.orange {background-color: #f47b20;}
+.pink {background-color: #ec008c}
+.green {background-color: #7ac143;}
+.lightBlue {background-color: #00aeef;}
+.blue {background-color: #2e3192;}
 
 #main{
     text-align: center;
@@ -20,43 +25,49 @@ body{
     display: none;
 }
 
-.btn {
-    background-color: #f47b20;      /* #d58a00 */
+.myBtn {
+    color: white;
     border-radius: 10px;
     border: 0;
-    margin-top: 10px;
+    margin: 15px;
     padding: 10px;
-    color: white;
     width: 85%; 
     font-size: xx-large;
 }
 
+#myModal {
+    color: black;
+}
 
-.btn-footer {
-    background-color: #7ac143;      /* #00AEEF */
+
+.myBtn-footer {
     border-radius: 10px;
     border: 0;
-    margin-top: 10px;
     padding: 10px;
     color: white;
     width: 85%; 
     font-size: large;
+    margin-bottom: 10px;
+}
+
+
+.closeBtn {
+    width: 100%;
+    margin: 0px;
 }
 
 
 #card_div{
-    width: 98%;
+    width: 96%;
     margin: auto;
-    margin-top:15px;
-    margin-bottom: 15px;
 }
 
-#name{
+#name, #modalName {
     font-size: xx-large; 
     font-weight: bold;
 }
 
-#card_img{
+#card_img {
     height: auto;
     width: inherit;
     margin-top:10px;
@@ -64,29 +75,33 @@ body{
     border-radius: 15px;
 }
 
-#power{
+#modalCardImg {
+    height: auto;
+    width: 100%;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius: 15px;
+}
+
+/*#power{
     font-size: x-large; 
     font-weight: bold;
-}
+}*/
 
-#description{
+#description, #modalDescription {
     font-size: x-large; 
 }
 
-#quote{
+#quote, #modalQuote {
     font-size: large; 
     font-style: italic;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 #footer{
-    /*position: absolute;*/
-    /*bottom:0;*/
-    color: #2e3192;
-    font-size: large;
+    font-size: medium;
     width: 100%;
-    padding-bottom: 5px;
-    margin-top: 5px;
+    padding-bottom: 15px;
 }
 
 .textInput {
@@ -97,18 +112,35 @@ body{
     display: none;
 }
 
+.myLabel {
+    display: block;
+}
+
+input[type="file"] {
+    display: inline-block;
+}
+
+input, textarea {
+    color: black;
+    font-weight: normal;
+}
+
+#imgForm {
+    color: white;
+}
+
 @keyframes spinner-border {
   to {
     transform: rotate(360deg);
   }
 }
 
-#spinner {
+.spinner {
   display: none;
-  color: #ec008c;    /* #7ac143 */
+  color: #ec008c;    
   margin: 10px;
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
   vertical-align: text-bottom;
   border: 0.2em solid currentColor;
   border-right-color: transparent;
@@ -116,3 +148,26 @@ body{
   -webkit-animation: spinner-border .75s linear infinite;
   animation: spinner-border .75s linear infinite;
 }
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: white;
+  border-color: #bbd6fe;
+  display: none;
+  font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+

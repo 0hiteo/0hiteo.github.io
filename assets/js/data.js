@@ -879,14 +879,6 @@
    "Note": ""
  },
  {
-   "Titolo": "WG Nciucess",
-   "Descrizione": "Se è mai stata mandata una tua foto sul WG Nciucess bevi. Se la foto è stata scattata all'Alcatraz bevi il doppio.",
-   "Citazione": "",
-   "img": "99892832-c986-4dca-a704-d7e67c91a1dd.jpg",
-   "Autore": "Giusi Discenza",
-   "Note": ""
- },
- {
    "Titolo": "Sguardo ammiccante",
    "Descrizione": "Se negli ultimi giorni hai guardato qualcuno per ore ma senza arrivare a nulla, perché nessuno ti caga, bevi x2.",
    "Citazione": "Parlare con le persone è sopravvalutato",

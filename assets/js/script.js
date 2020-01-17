@@ -7,6 +7,8 @@ $(document).ready(function(){
 		$("#spinner").hide()
 		$('#card_img').css('opacity', '1');
 	});
+
+	$("#eventoBtn").removeAttr("data-toggle");
 });
 
 
@@ -15,6 +17,8 @@ $(document).ready(function(){
 function draw() {
 	$("#spinner").css("display", "inline-block")
 	$('#card_img').css('opacity', '0.5');
+	$("#eventoBtn").attr("data-toggle", "modal");
+	$("#eventoBtn").html("Evento in corso:\n<br><strong>Alcatraz</strong>")
 	var r = Math.floor(Math.random() * localJson.length);
 	var card = localJson[r]
 
@@ -25,8 +29,7 @@ function draw() {
 	  document.getElementById("card_img").src="assets/img/default.jpg"
 	}
 
-	
-
+	/*
 	if(card.Descrizione.split(":").length == 2) {
 		var splittedDescr = card.Descrizione.split(":")
 		$("#power").html(splittedDescr[0])
@@ -34,10 +37,10 @@ function draw() {
 	} else {
 		$("#power").html("")
 		$("#description").html(card.Descrizione)
-	}
+	}*/
 
-	
 	$("#name").html(card.Titolo)
+	$("#description").html(card.Descrizione)
 	if(card.Citazione != "") {
 		$("#quote").html('"' + card.Citazione + '"')
 	} else {
@@ -64,6 +67,10 @@ function gamePage() {
 }
 
 function createNewCard(event) {
+	$("#spinnerCreateCard").css("display", "inline-block")
+	$("#alert").show()
+	$("#backButton").css("display", "none")
+	$("#createButton").css("display", "none")
 	//event.preventDefault()
 	var title = $("#titleForm").val()
 	var description = $("#descriptionForm").val()
@@ -104,4 +111,13 @@ for (var i=0;i<json.length;i++) {
     cards.push(new Card(obj.Titolo, obj.Descrizione, obj.Citazione, obj.img, obj.Autore, obj.Note))
 }
 */
+
+
+
+
+
+
+
+
+
 
