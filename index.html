@@ -25,9 +25,7 @@
 
 
         <!-- Button to Open the Modal -->
-        <button type="button" class="myBtn green" data-toggle="modal" data-target="#myModal" id="eventoBtn">
-          Nessun evento in corso...
-        </button>
+        <button type="button" class="myBtn green" data-toggle="modal" data-target="#myModal" id="eventoBtn">Nessun evento in corso...</button>
 
         <div class="modal fade" id="myModal">
           <div class="modal-dialog">
@@ -39,8 +37,8 @@
               <div class="modal-body">
                 <img src="assets/img/alcatraz.jpg" id="modalCardImg" onerror="this.onerror=null; this.src='assets/img/default.jpg'">
                 <div id="modalPower"></div>
-                <div id="modalDescription"> Raddoppia il numero di tutte le bevute </div>
-                <div id="modalQuote"> "Il venerdì è solo Alcatraz" </div>
+                <div id="modalDescription">Raddoppia il numero di tutte le bevute</div>
+                <div id="modalQuote">"Il venerdì è solo Alcatraz"</div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="myBtn closeBtn pink" data-dismiss="modal">Chiudi</button>
@@ -67,6 +65,9 @@
             <br><label class="myLabel">Titolo*:<br><input required type="text" id="titleForm" class="textInput"/></label>   
             <br><label class="myLabel">Descrizione*:<br><textarea required type="text" id="descriptionForm" class="textInput" rows="6"></textarea></label> 
             <br><label class="myLabel">Immagine*:<br><input type="file" name="Immagine" id="imgForm" accept="image/*" required></textarea></label> 
+            <br><strong>Tipo di Carta:</strong>
+            <br><label class="radio-inline"><input type="radio" name="optradio" value="base" checked>Base</label>
+                <label class="radio-inline"><input type="radio" name="optradio" value="evento">Evento (permanente)</label><br>
             <br><label class="myLabel">Citazione:<br><textarea type="text" id="quoteForm" class="textInput" rows="3"></textarea></label> 
             <br><label class="myLabel">Autore:<br><input type="text" id="authorForm" class="textInput"/></label>   
             <br><label class="myLabel">Note:<br><input type="text" id="noteForm" class="textInput"/></label>

@@ -17,8 +17,7 @@ $(document).ready(function(){
 function draw() {
 	$("#spinner").css("display", "inline-block")
 	$('#card_img').css('opacity', '0.5');
-	$("#eventoBtn").attr("data-toggle", "modal");
-	$("#eventoBtn").html("Evento in corso:\n<br><strong>Alcatraz</strong>")
+
 	var r = Math.floor(Math.random() * localJson.length);
 	var card = localJson[r]
 
@@ -49,6 +48,25 @@ function draw() {
 	
 	localJson.splice(r, 1)	
 	console.log(card.Titolo, localJson.length)
+
+
+	if($("#eventoBtn").html() == "Nessun evento in corso...") {		// da togliere...serve solo per testare ora
+		$("#eventoBtn").attr("data-toggle", "modal");
+		$("#eventoBtn").html("Evento in corso:\n<br><strong>Alcatraz</strong>")
+	} else {
+		if(card.tipo == "evento") {
+			$("#description").html("<strong>Evento:</strong><br>"+card.Descrizione)
+			document.getElementById("modalCardImg").src="assets/img/"+card.img
+			$("#eventoBtn").html("Evento in corso:\n<br><strong>"+card.Titolo+"</strong>")
+			$("#modalName").html(card.Titolo)
+			$("#modalDescription").html(card.Descrizione)
+			if(card.Citazione != "") {
+				$("#modalQuote").html('"' + card.Citazione + '"')
+			} else {
+				$("#modalQuote").html("")
+			}
+		}
+	}
 }
 
 
@@ -78,13 +96,12 @@ function createNewCard(event) {
 	var img = $("#imgForm").val()
 	img = img.split("\\")
 	img = img[img.length-1]
-	//img = img.split(".")
-	//img.pop()		// elimina l'estensione
-	//img = img.join("");
+	var type = $('input[name="optradio"]:checked').val();
 	var author = $("#authorForm").val()
 	var note = $("#noteForm").val()
-	var jsonToUpload = "{'Titolo': '" + title + "', 'Descrizione': '" + description + "', 'Citazione': '" + quote + "', 'img': '" + img + "', 'Autore': '" + author + "', 'Note': '" + note + "'}"
+	var jsonToUpload = "{'Titolo': '" + title + "', 'Descrizione': '" + description + "', 'Citazione': '" + quote + "', 'img': '" + img + "', 'tipo': '" + type + "', 'Autore': '" + author + "', 'Note': '" + note + "'}"
 	$("#jsonForm").val(jsonToUpload)	// così viene uploadato su Netlify
+	alert(jsonToUpload)
 	return true
 }
 
