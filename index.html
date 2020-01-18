@@ -8,15 +8,23 @@
         <script src="assets/js/data.js"></script>
         <script src="assets/js/script.js"></script>
         <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     </head>
     <body class="lightBlue">
     <div id="main">
-        <button type="button" class="myBtn blue" onclick="draw()">Pesca una Carta</button>
+        <button type="button" class="myBtn blue" onclick="draw()">
+            Pesca una Carta <span class="badge myBadge orange" id="badge"></span>
+        </button>
         <div id="card_div">
             <div id="name"></div>
             <div id="spinner" class="spinner"></div>
             <img src="assets/img/card_back.png" id="card_img" onerror="this.onerror=null; this.src='assets/img/default.jpg'">
             <div id="power"> </div>
+            <audio id="myAudio">
+              <source src="assets/audio/juri.mp3" type="audio/mp3" id="audioSrc">
+              File audio non supportato dal tuo browser :(
+            </audio>
+            <button type="button" class="myAudioBtn pink fas fa-volume-up" id="audioBtn"></button>
             <div id="description"> </div>
             <div id="quote"></div>
         </div>
@@ -35,10 +43,10 @@
                 <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
               </div>
               <div class="modal-body">
-                <img src="assets/img/alcatraz.jpg" id="modalCardImg" onerror="this.onerror=null; this.src='assets/img/default.jpg'">
+                <img src="assets/img/default.jpg" id="modalCardImg" onerror="this.onerror=null; this.src='assets/img/default.jpg'">
                 <div id="modalPower"></div>
-                <div id="modalDescription">Raddoppia il numero di tutte le bevute</div>
-                <div id="modalQuote">"Il venerdì è solo Alcatraz"</div>
+                <div id="modalDescription"></div>
+                <div id="modalQuote"></div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="myBtn closeBtn pink" data-dismiss="modal">Chiudi</button>
@@ -64,7 +72,7 @@
         <form name="form" id="form" method="POST" onsubmit="return createNewCard()" data-netlify="true">
             <br><label class="myLabel">Titolo*:<br><input required type="text" id="titleForm" class="textInput"/></label>   
             <br><label class="myLabel">Descrizione*:<br><textarea required type="text" id="descriptionForm" class="textInput" rows="6"></textarea></label> 
-            <br><label class="myLabel">Immagine*:<br><input type="file" name="Immagine" id="imgForm" accept="image/*" required></textarea></label> 
+            <br><label class="myLabel">Immagine*:<br><input type="file" name="Immagine" id="imgForm" required></textarea></label> 
             <br><strong>Tipo di Carta:</strong>
             <br><label class="radio-inline"><input type="radio" name="optradio" value="base" checked>Base</label>
                 <label class="radio-inline"><input type="radio" name="optradio" value="evento">Evento (permanente)</label><br>

@@ -35,6 +35,20 @@ body{
     font-size: xx-large;
 }
 
+.myAudioBtn {
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 96%;
+    font-size: xx-large;
+}
+
+#audioBtn {
+    display: none;
+}
+
 #myModal {
     color: black;
 }
@@ -83,10 +97,11 @@ body{
     border-radius: 15px;
 }
 
-/*#power{
+#power{
     font-size: x-large; 
     font-weight: bold;
-}*/
+    display: none;
+}
 
 #description, #modalDescription {
     font-size: x-large; 
@@ -95,7 +110,7 @@ body{
 #quote, #modalQuote {
     font-size: large; 
     font-style: italic;
-    margin: 10px;
+    margin-top: 10px;
 }
 
 #footer{
@@ -158,6 +173,11 @@ input, textarea {
   border-color: #bbd6fe;
   display: none;
   font-size: large;
+}
+
+.myBadge {
+    display: inline;
+    font-size: 15px;
 }
 
 
