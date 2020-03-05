@@ -173,7 +173,7 @@
    "Titolo": "Brindisino",
    "Descrizione": "Chi pesca questa carta deve far partire un brindisino.",
    "Citazione": "briiiiiiiiiiiii...",
-   "img": "brindisino.jpg",
+   "img": "brindisino.gif",
    "tipo": "base",
    "Autore": "Luca Arotta",
    "Note": ""
@@ -514,7 +514,7 @@
  {
    "Titolo": "Statale great again",
    "Descrizione": "A partire dal giocatore a destra di chi ha pescato questa carta, si iniziano a cantare cori contro le altre sezioni. Chi non riesce ad andare avanti beve.",
-   "Citazione": "Abbiamo fatto il record di numeri al prom, il record al crazy, al tuo erasmus con esn, abbiamo fatto il Mimeu, il più bel NETx di sempre, siamo cresciuti esponenzialmente, abbiamo attivato nuovi wg, abbiamo introdotto il format del pub crawl, abbiamo portato in agm più gente di qualsiasi altra sezione, etc.",
+   "Citazione": "Abbiamo fatto il record di numeri al prom, il record al crazy, al tuo erasmus con ESN, abbiamo fatto il Mimeu, il più bel NETx di sempre, siamo cresciuti esponenzialmente, abbiamo attivato nuovi wg, abbiamo introdotto il format del pub crawl, abbiamo portato in agm più gente di qualsiasi altra sezione, etc.",
    "img": "peppeBicocca.gif",
    "tipo": "base",
    "Autore": "Stefano Rossi",
@@ -1066,6 +1066,7 @@
    "Citazione": "",
    "img": "ae2b4e03-cb2d-4a86-8d14-8951534fbcb5.jpg",
    "tipo": "base",
+   "audio": "paolo.mp3",
    "Autore": "Giulia Mazza",
    "Note": ""
  },
@@ -1116,7 +1117,7 @@
  },
  {
    "Titolo": "Peppe molesto",
-   "Descrizione": "Se cristian è in gioco, beve per dimenticare. Tutti gli e le esner molestati/e da peppe bevono",
+   "Descrizione": "Se cristian è in gioco, beve per dimenticare. Tutti gli e le ESNer molestati/e da peppe bevono",
    "Citazione": "",
    "img": "peppeMolesto.jpg",
    "tipo": "base",
@@ -1192,12 +1193,12 @@
  {'Titolo': 'Luca con il secchiello ', 'Descrizione': 'Mangiate tutto quello che trovate sul tavolo', 'Citazione': '', 'img': '06454426-3A27-45B0-88EA-29FD315EF87A.jpeg', "tipo": "base", 'Autore': 'Giulia ', 'Note': ''},
  {'Titolo': 'Colazione con Frank', 'Descrizione': 'Bevono solo quelli che hanno studiato legge.', 'Citazione': 'Dato che qui ho una pistola, direi che la brioche è mia', 'img': '8FC129E6-F089-462D-8EF3-A97A5140028C.jpeg', "tipo": "base", 'Autore': 'Giulia', 'Note': ''},
  {'Titolo': 'La befana', 'Descrizione': 'Laura beve x3 per dimenticare. In alternativa, tutti i membri dell’oc del netx bevono', 'Citazione': '', 'img': '53A45A68-6ACA-431B-9B0D-F9147A44B32E.jpeg', "tipo": "base", 'Autore': 'Giulia', 'Note': ''},
- {'Titolo': 'Davide Tedesco corrotto dal potere dell’ananas', 'Descrizione': 'Tutti i non esner in gioco bevono x3. In alternativa, gli esner convinti da amici/parenti a entrare in esn bevono.', 'Citazione': '', 'img': '8F738CE8-19D8-4200-BD01-5CBC6944FB03.jpeg', "tipo": "base", 'Autore': '', 'Note': ''},
+ {'Titolo': 'Davide Tedesco corrotto dal potere dell’ananas', 'Descrizione': 'Tutti i non ESNer in gioco bevono x3. In alternativa, gli ESNer convinti da amici/parenti a entrare in ESN bevono.', 'Citazione': '', 'img': '8F738CE8-19D8-4200-BD01-5CBC6944FB03.jpeg', "tipo": "base", 'Autore': '', 'Note': ''},
  {'Titolo': 'No Messico', 'Descrizione': 'Tutti i giocatori che hanno mai voluto farsi qualcuno della sezione bevono, altrimenti scuotono testa e dita e fanno cenno di no.', 'Citazione': '', 'img': 'E7C2E2E1-8DA2-4A0D-9219-9720A58D5333.jpeg', "tipo": "base", 'Autore': '', 'Note': ''},
- {'Titolo': 'Zero fucks given', 'Descrizione': 'Non devi più bere. Gli altri giocatori hanno il diritto a sfidarti a una gara di ESN: possono farti una domanda su esn statale italia o international, se rispondi bene bevono x10, altrimenti il giocatore che ha posto la domanda acquisisce l’immunità e non deve bere.', 'Citazione': '', 'img': 'DB2E82CB-0EBD-4F57-9766-9FB93C6AB6CB.jpeg', "tipo": "base", 'Autore': '', 'Note': ''},
- {'Titolo': 'Power moves', 'Descrizione': 'Mima un mestiere, un animale, o un esner. Il primo giocatore a indovinare ha il diritto di assegnare due bevute.', 'Citazione': '', 'img': 'EAEC79EF-F9CC-4F2A-A59F-78658FAB7149.gif', "tipo": "base", 'Autore': '', 'Note': ''},
+ {'Titolo': 'Zero fucks given', 'Descrizione': 'Non devi più bere. Gli altri giocatori hanno il diritto a sfidarti a una gara di ESN: possono farti una domanda su ESN statale italia o international, se rispondi bene bevono x10, altrimenti il giocatore che ha posto la domanda acquisisce l’immunità e non deve bere.', 'Citazione': '', 'img': 'DB2E82CB-0EBD-4F57-9766-9FB93C6AB6CB.jpeg', "tipo": "base", 'Autore': '', 'Note': ''},
+ {'Titolo': 'Power moves', 'Descrizione': 'Mima un mestiere, un animale, o un ESNer. Il primo giocatore a indovinare ha il diritto di assegnare due bevute.', 'Citazione': '', 'img': 'EAEC79EF-F9CC-4F2A-A59F-78658FAB7149.gif', "tipo": "base", 'Autore': '', 'Note': ''},
  {'Titolo': 'ESN Milano Estatale', 'Descrizione': 'Giulia e Gianluca, se presenti, bevono. Tutti i presenti che hanno fatto OC del Crazy bevono x 5 per dimenticare.', 'Citazione': 'Are you Giulia from ESN Milano Estatele?', 'img': '7344F785-F5D5-47EC-B546-F9A85DBC08C5.jpeg', "tipo": "base", 'Autore': '', 'Note': ''},
- {'Titolo': 'Sport Night', 'Descrizione': 'I giocatori possono sostituire ogni bevuta con una flessione', 'Citazione': '', 'img': 'photo_2020-01-18_12-47-41.jpg', "tipo": "evento", 'Autore': 'Luca Arrotta', 'Note': ''},
+ {'Titolo': 'Sport Night', 'Descrizione': 'Prima di bere i propri sorsi, i giocatori devono fare una flessione o un altro esercizio fisico concordato con il resto dei partecipanti al gioco', 'Citazione': '', 'img': 'photo_2020-01-18_12-47-41.jpg', "tipo": "evento", 'Autore': 'Luca Arrotta', 'Note': ''},
  {'Titolo': 'Disagio universale', 'Descrizione': 'Luca dorme nel bagagliaio, Laura si è chiusa fuori, Giusi si è infilzata con un arrosticino. Beviamo tutti per dimenticare', 'Citazione': '', 'img': 'IMG-20190829-WA0065.jpg', 'tipo': 'base', 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Salvini il salvatore', 'Descrizione': "Punta il dito contro l'ESNer più razzista. Se si offende beve x3, se accetta di buon grado beve x2 ed insulta il popolo meno amato", 'Citazione': '', 'img': 'IMG-20190829-WA0066.jpg', 'tipo': 'base', 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Cristian trasformista', 'Descrizione': "Se almeno una volta nella vita ti sei travestito per assomigliare all'altro sesso bevi x2. Se ti sei vestito da animale bevi x4. Se sei stato attratto da una persona vestita da frutta o verdura bevi x6", 'Citazione': 'Puoi startene seduto tutta la sera su una terrazza, al freddo, e avere ancora fiducia che la tua zucca arriverà? ', 'img': 'IMG_20200118_110707.jpg', 'tipo': 'base', 'Autore': 'Stefano Rossi', 'Note': ''},
@@ -1209,7 +1210,7 @@
  {'Titolo': 'Raga, ma quanto cazzo è grosso', 'Descrizione': "Le dimensioni non contano, ma nel dubbio bevono il più alto e la ragazza col seno più grande x3", 'Citazione': "Raga, ma quanto cazzo è grosso!", 'img': 'photo_2020-01-18_11-43-18.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Hola il cazzo', 'Descrizione': "Quando questa carta entra in gioco, eventuali spagnoli presenti bevono x4. Inoltre, i giocatori puntano il dito contro la persona più “spagnola” del gruppo. Questa persona deve bere x4 e rispondere “jajajajaja” a qualsiasi domanda o discorso fin quando qualcuno non gli sbotta contro in dialetto stretto, in tedesco, o in qualsiasi altra lingua sufficientemente minacciosa", 'Citazione': "La spagnola ha tentato di superarci", 'img': 'photo_2020-01-18_11-45-34.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Spam molesto', 'Descrizione': "Indica un giocatore. Quel giocatore ora beve ad ogni nuova carta giocata. Il giocatore può smettere di bere in continuazione solo quando avrà tormentato gli altri giocatori al punto in cui questi gli chiedono di smettere", 'Citazione': "Raga, gli ho appena inviato 170 foto", 'img': 'photo_2020-01-18_11-49-49.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
- {'Titolo': 'Natasha strafatta e soddisfatta', 'Descrizione': "Photo contest! Ogni giocatore seleziona una foto sul proprio cellulare e la mostra agli altri. La foto deve riguardare esn o i giocatori attualmente presenti. La più divertente ha diritto ad assegnare 3 bevute", 'Citazione': "", 'img': 'photo_2020-01-18_11-50-36.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
+ {'Titolo': 'Natasha strafatta e soddisfatta', 'Descrizione': "Photo contest! Ogni giocatore seleziona una foto sul proprio cellulare e la mostra agli altri. La foto deve riguardare ESN o i giocatori attualmente presenti. La più divertente ha diritto ad assegnare 3 bevute", 'Citazione': "", 'img': 'photo_2020-01-18_11-50-36.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Salvemini, Salvemini e Salvemini', 'Descrizione': "Tutti i giocatori a turno pronunciano il nome della persona più famosa con cui sono imparentati/che conoscono bene/che ha il loro stesso cognome. Vince chi impressiona più gli altri e ha diritto ad assegnare 4 bevute", 'Citazione': "", 'img': 'photo_2020-01-18_11-51-28.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Three shades of Sara', 'Descrizione': "Decidete il giocatore che in un’altra vita sarebbe la ragazza più bella e la giocatrice che sarebbe il ragazzo più carino. I due devono baciarsi, ma attenzione! Ricordatevi che la donna ora è l’uomo, e viceversa. Se sono credibili, tutti gli altri bevono x6", 'Citazione': "", 'img': 'photo_2020-01-18_11-52-20.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Bear Gryls Borghy', 'Descrizione': "La persona con più probabilità di sopravvivere da solo in una foresta per un mese beve x2, la persona con più probabilità di non farlo beve x4", 'Citazione': "", 'img': 'photo_2020-01-18_11-58-21.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
@@ -1227,12 +1228,21 @@
  {'Titolo': 'Julm', 'Descrizione': "Juri beve x3. Se lo fa, le ragazze presenti devono dargli un bacio fingendosi iulmicorne", 'Citazione': "", 'img': 'photo_2020-01-18_12-15-16.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Shopping ossessivo-compulsivo', 'Descrizione': "I presenti bevono x2 per ogni articolo di abbigliamento, trucco, o articolo da toilette comprato nell’ultima settimana", 'Citazione': "", 'img': 'photo_2020-01-18_12-16-03.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Emmanuelle', 'Descrizione': "Beve chiunque non conosca Emmanuelle. Se stefano alessio e laura sono stati al concerto, hanno il diritto di assegnare 6 bevute", 'Citazione': "", 'img': 'photo_2020-01-18_12-16-31.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
- {'Titolo': 'Santoru Brandizzato', 'Descrizione': "Chi ha con se un accessorio brandizzato di un partner di esn ha il diritto di assegnare 3 bevute", 'Citazione': "", 'img': 'photo_2020-01-18_12-16-57.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
+ {'Titolo': 'Santoru Brandizzato', 'Descrizione': "Chi ha con se un accessorio brandizzato di un partner di ESN ha il diritto di assegnare 3 bevute", 'Citazione': "", 'img': 'photo_2020-01-18_12-16-57.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Borghese Cantautore', 'Descrizione': "Se borghese è presente, canta con lui una hit a vostro piacimento. In alternativa bevi", 'Citazione': "", 'img': 'photo_2020-01-18_12-17-18.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Fuck it, let’s skibidi', 'Descrizione': "Bevi x2 a meno che tu non conosca tutti i passi di skibidi romantic edition", 'Citazione': "", 'img': 'photo_2020-01-18_12-17-39.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Statale Autunno-Inverno 2019', 'Descrizione': "Il più elegante del gruppo beve. Se tutti sono vestiti uguali, puntate il dito verso quello che solitamente si veste meglio. La persona scelta decide se fare uno spogliarello o bere x4", 'Citazione': "", 'img': 'photo_2020-01-18_12-18-04.jpg', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
  {'Titolo': 'Alcatraz', 'Descrizione': "Raddoppia il numero di tutte le bevute", 'Citazione': "", 'img': 'alcatraz.jpg', "tipo": "evento", 'Autore': 'Luca Arrotta', 'Note': ''},
  {'Titolo': 'Juri infoiato in preda a delirio mistico', 'Descrizione': 'Tutti bevono x2 per iniziare a creare confusione. Come a Messico, a turno tutti rispondono per la persona di due posti alla loro destra alla domanda: "sei andato a letto con qualcuno nell' + "'" + 'ultima settimana?". In caso di errore, la persona grida Messico e ci si scambia di posto. In caso nessuno sia andato a letto, Juri qualora presente decide chi deve bere per 10.', 'Citazione': "", 'img': 'juriAlcatraz.gif', "audio": "juri.mp3", "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
+ {'Titolo': 'Pub Crawl', 'Descrizione': "Ogni giocatore prende come riferimento la persona che si trova sulla sua sinistra. Il giocatore che ha pescato questa carta inizia a bere. Ogni altro giocatore inizia a bere dal proprio bicchiere dal momento in cui inizia a farlo la sua persona di riferimento. Nessun giocatore può smettere di bere prima della propria persona di riferimento", 'Citazione': "", 'img': 'photo_2020-01-18_20-53-43.jpg', "tipo": "base", 'Autore': 'Luca Arrotta', 'Note': ''},
+ {'Titolo': 'WG Sveltina', 'Descrizione': "Il tentativo fatto con questo WG è miseramente fallito, tutti i ragazzi bevono per dimenticare", 'Citazione': "", 'img': 'photo_2020-01-18_20-47-37.jpg', "tipo": "base", 'Autore': 'Luca Arrotta', 'Note': ''},
+ {'Titolo': 'WG Pipì', 'Descrizione': "Questo WG è un po' troppo inoperoso, tutte le ragazze bevono", 'Citazione': "", 'img': 'photo_2020-01-18_20-47-50.jpg', "tipo": "base", 'Autore': 'Luca Arrotta', 'Note': ''},
+ {'Titolo': 'Tandem Night', 'Descrizione': "Ogni giocatore si sceglie un compagno. Durante tutta la durata di questo evento, quando un giocatore beve, deve bere anche il suo compagno", 'Citazione': "", 'img': 'photo_2020-01-18_20-56-44.jpg', "tipo": "evento", 'Autore': 'Luca Arrotta', 'Note': ''},
+ {'Titolo': 'Trova ciò che ami e lascia che ti uccida', 'Descrizione': 'Chi pesca la carta è obbligato a farsi uno shot con l’alcolico che preferisce', 'Citazione': '', 'img': '9BA33E22-0CDB-4DF4-974D-3A11153D6BAD.jpeg', 'Autore': 'Giulia', 'Note': ''},
  ];
 
  // {'Titolo': '', 'Descrizione': "", 'Citazione': "", 'img': '', "tipo": "base", 'Autore': 'Stefano Rossi', 'Note': ''},
+
+ //   es1: il giocatore sceglie cosa deve dire ognuno prima di bere
+ //   es2: Teeth (players can't show their teeth when they laugh) (-> qualcosa con Fabrizio?)
+ //   es3: aggiungi una regola a piacere (ci vuole una figura che può fare un po' quel cazzo che vuole)
